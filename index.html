@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Opción a Atajos de Página</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      /* Centra el cuadro del menú vertical y horizontalmente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      /* Imagen en todo el background */
+      background-color: #1e293b; /* Color de respaldo si aún no pones la imagen */
+      background-image: url("img/fime.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Cuadro del menú en medio */
+    nav {
+      background-color: rgba(25, 28, 36, 0.85); /* Cuadro oscuro semitransparente */
+      color: #ffffff;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 45px 50px;
+      max-width: 750px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Texto grande dentro del cuadro */
+    nav h1 {
+      font-size: 2.3rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      line-height: 1.25;
+    }
+
+    /* Contenedor de las 3 opciones */
+    .menu-opciones {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .menu-opciones a {
+      display: inline-block;
+      color: #ffffff;
+      background-color: #0d6efd;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 600;
+      padding: 12px 26px;
+      border-radius: 8px;
+      transition: background-color 0.2s, transform 0.15s;
+    }
+
+    .menu-opciones a:hover {
+      background-color: #0b5ed7;
+      transform: translateY(-2px);
+    }
+
+    /* Ajuste para pantallas pequeñas */
+    @media (max-width: 600px) {
+      nav {
+        padding: 30px 20px;
+      }
+
+      nav h1 {
+        font-size: 1.6rem;
+      }
+
+      .menu-opciones {
+        flex-direction: column;
+      }
+
+      .menu-opciones a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cuadro centrado con el menú -->
+  <nav>
+    <h1>MENÚ DE OPCIÓN A ATAJOS DE PAGINA</h1>
+
+    <ul class="menu-opciones">
+      <li><a href="#">pagina 1</a></li>
+      <li><a href="#">pagina 2</a></li>
+      <li><a href="#">pagina 3</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
